@@ -1,0 +1,12 @@
+package calculoPromedioGUI;
+
+public class Procesos {
+	
+	public void calcularPromedio(nota1, nota2, nota3) {
+		
+		
+		
+		
+	}
+
+}

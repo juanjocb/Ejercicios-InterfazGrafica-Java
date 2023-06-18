@@ -1,0 +1,44 @@
+package operaciones;
+
+import java.awt.Color;
+
+import javax.swing.JOptionPane;
+
+public class Procesos {
+
+	public double calcularPromedio(double nota1, double nota2, double nota3) {
+
+		double promedio = 0;
+
+		if (nota1 <= 5 && nota1 >= 0 && nota2 <= 5 && nota2 >= 0 && nota3 <= 5 && nota3 >= 0) {
+
+			promedio = (nota1 + nota2 + nota3) / 3;
+
+		} else {
+			JOptionPane.showMessageDialog(null, "Ingreso de notas erronea. Limite: 0 - 5)");
+		}
+
+		return promedio;
+	}
+
+	public String calcularDefinitiva(double promedio) {
+
+		if (promedio >= 30) {
+			return "GANA";
+		} else {
+			return "PIERDE";
+		}
+
+	}
+
+	public void calcularPromedio(double nota1, double nota2, double nota3) {
+
+		if (nota1 <= 5 && nota1 >= 0 && nota2 <= 5 && nota2 >= 0 && nota3 <= 5 && nota3 >= 0) {
+			calcularPromedio(nota1, nota2, nota3);
+		} else {
+			JOptionPane.showMessageDialog(null, "Ingreso de notas erronea. Limite: 0 - 5)");
+		}
+
+	}
+
+}
